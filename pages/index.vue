@@ -24,6 +24,8 @@ section.container
 import Logo from '~/components/Logo.vue';
 
 export default {
+    name: 'IndexPage',
+
     components: {
         Logo
     }

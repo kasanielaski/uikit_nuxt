@@ -17,8 +17,7 @@
         "@nuxtjs/axios": "^5.3.6",
         "cross-env": "^5.2.0",
         "koa": "^2.6.2",
-        "nuxt": "^2.4.0",
-        "vue-property-decorator": "^8.0.0"
+        "nuxt": "^2.4.0"
     },
     "devDependencies": {
         "@nuxtjs/eslint-config": "^0.0.1",
@@ -45,8 +44,6 @@
         "pug": "^2.0.3",
         "pug-plain-loader": "^1.0.0",
         "sass-loader": "^7.1.0",
-        "ts-loader": "^5.3.3",
-        "typescript": "^3.3.4000",
         "vue-jest": "^3.0.3"
     }
 }

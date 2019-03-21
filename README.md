@@ -1,4 +1,4 @@
-# uikit_ts_nuxt
+# uikit_nuxt
 
 > My first-class Nuxt.js project
 

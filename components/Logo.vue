@@ -6,14 +6,9 @@
     .Triangle.Triangle--four
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-
-@Component
-export default class Logo extends Vue {
-    created () {
-        console.log('created logo');
-    }
+<script>
+export default {
+    name: 'Logo'
 };
 </script>
 
