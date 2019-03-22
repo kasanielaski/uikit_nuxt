@@ -1,27 +1,18 @@
 <template lang="pug">
 section.container
-    Header
 </template>
 
 <script>
-import Header from '~/components/Header.vue';
-
 export default {
-    name: 'IndexPage',
-
-    components: {
-        Header
-    }
+    name: 'IndexPage'
 };
 </script>
 
 <style>
 .container {
-    margin: 0 auto;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: indianred;
 }
 </style>

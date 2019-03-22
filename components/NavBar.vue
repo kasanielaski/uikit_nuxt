@@ -1,12 +1,19 @@
 <template lang="pug">
-.header
-    | ssss
+.navbar
+    | navbar
 </template>
 
+<script>
+export default {
+    name: 'NavBar'
+};
+</script>
+
 <style lang="scss" scoped>
-.header {
+.navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: darkseagreen;
 }
 </style>

@@ -1,7 +1,21 @@
 <template lang="pug">
 .default-layout
-    Nuxt
+    NavBar.default-layout__navbar
+    SideBar.default-layout__sidebar
+    Nuxt.default-layout__container
 </template>
+
+<script>
+import NavBar from '~/components/NavBar.vue';
+import SideBar from '~/components/SideBar.vue';
+
+export default {
+    components: {
+        NavBar,
+        SideBar
+    }
+};
+</script>
 
 <style lang="scss">
 html {
@@ -20,5 +34,26 @@ html {
 *:after {
     box-sizing: border-box;
     margin: 0;
+}
+
+.default-layout {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 60px 1fr;
+
+    &__navbar {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    &__sidebar {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    &._container {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 }
 </style>
