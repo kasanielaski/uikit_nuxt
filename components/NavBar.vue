@@ -1,11 +1,23 @@
 <template lang="pug">
-.navbar
-    | navbar
+nav.navbar
+    ul.navbar__list
+        li.navbar__list._item(
+            @click="toggleSidebar()"
+        )
+            | show/hide sidebar
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
-    name: 'NavBar'
+    name: 'NavBar',
+
+    methods: {
+        ...mapActions({
+            toggleSidebar: 'toggleSidebar'
+        })
+    }
 };
 </script>
 

@@ -1,11 +1,15 @@
 <template lang="pug">
 .default-layout
     NavBar.default-layout__navbar
-    SideBar.default-layout__sidebar
+    SideBar.default-layout__sidebar(
+        v-if="isSidebarVisible"
+    )
     Nuxt.default-layout__container
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 import NavBar from '~/components/NavBar.vue';
 import SideBar from '~/components/SideBar.vue';
 
@@ -13,6 +17,12 @@ export default {
     components: {
         NavBar,
         SideBar
+    },
+
+    computed: {
+        ...mapGetters({
+            isSidebarVisible: 'isSidebarVisible'
+        })
     }
 };
 </script>
