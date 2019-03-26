@@ -5,8 +5,8 @@ nav.pagination
             v-for="(page, index) in computedPages",
             :key="index"
         )
-            nuxt-link.pagination__list._link(
-                :href="`/page/${page}`"
+            NuxtLink.pagination__list._link(
+                :to="`/page/${page}`"
             )
 </template>
 
