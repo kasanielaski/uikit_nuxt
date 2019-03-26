@@ -21,24 +21,7 @@ export default {
         dataset: {
             required: false,
             type: Array,
-            default: () => [
-                {
-                    id: 0,
-                    value: 'name'
-                },
-                {
-                    id: 1,
-                    value: 'value'
-                },
-                {
-                    id: 2,
-                    value: 'qwerty'
-                },
-                {
-                    id: 3,
-                    value: 'test'
-                }
-            ]
+            default: () => ['qwerty', 'aseq', 'text', 'test']
         }
     },
 
@@ -55,9 +38,9 @@ export default {
             const result = [];
 
             for (let i = 0; i < this.suggestList.length; i++) {
-                const substring = suggestList[i].value.slice(0, length);
+                const substring = suggestList[i].subst(0, length);
                 if (substring === userInput) {
-                    result.push(suggestList[i].value);
+                    result.push(suggestList[i]);
                 }
             }
 
